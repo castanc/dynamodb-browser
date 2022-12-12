@@ -1,0 +1,18 @@
+access aws from browser:
+https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html
+
+NAME: kg-ip3
+ROLE: Cognito_KGIP3Unauth_Role
+
+// Initialize the Amazon Cognito credentials provider
+AWS.config.region = 'us-east-1'; // Region
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'us-east-1:32f6d6ad-3da6-4d98-83ad-5d30789ed990',
+});
+
+arn: arn:aws:iam::492137755245:role/Cognito_KGIP3Unauth_Role
+
+
+browser js aws samples
+https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/dynamodb-examples.html
+
